@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Lista movile*/
+@media screen and (min-width:0px) and (max-width:767px){
+    .gridContainer{
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "navIzq navDer"
+        "parrafo parrafo"
+        "imgParrafo imgParrafo"
+        "footer footer";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 70px auto 1fr 100px;
+    }
+    
+    header {
+        grid-area: header;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navIzq{
+        grid-area: navIzq;
+
+    }
+
+    .navDer{
+        grid-area: navDer;
+    }
+
+    .navDer ul, -navIzq ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    li{
+        padding: 5px;
+        list-style-type: none;
+    }
+
+    .parrafo{
+        grid-area: parrafo;
+    }
+
+    .imgParrafo{
+        grid-area: imgParrafo;
+    }
+
+    .footer{
+        grid-area:footer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    /*Lista Desktop*/
+@media screen and (min-width:768px){
+    .gridContainer{
+        display: grid;
+        grid-template-areas: 
+        "navIzq navIzq header header navDer navDer"
+        "parrafo parrafo parrafo imgParrafo imgParrafo imgParrafo"
+        "footer footer footer footer footer footer";
+        grid-template-columns: repeat(1fr, 6);
+        grid-template-rows: 100px auto 100px;
+        }
+        .footer{
+            grid-area:footer;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-content: center;
+        }
+    }
+}
