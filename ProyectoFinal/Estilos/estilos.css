@@ -54,7 +54,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgb(77, 170, 89);
+    background-color: rgb(218, 228, 220);
     width: 100%;
     margin-top: auto;
 }
@@ -317,6 +317,11 @@ flex-wrap: wrap;
     text-align: left;
 }
 
+.tamanio{
+    height: 250px;
+}
+
+
 /*SECCION MIS PACIENTES*/
 
 .acomodar{
@@ -324,6 +329,7 @@ flex-wrap: wrap;
     background: #444;
     margin: 0;
     font-family: monospace;
+    
 }
 
 .acomodar h3{
@@ -354,7 +360,12 @@ flex-wrap: wrap;
 .imagenes img{
     width: 100%;
     max-width: 500px;
+    width: 100%;
+    vertical-align: top;
+    height: 350px;
+    object-fit: cover;
 }
+
 
 /*SECCION CONTACTO*/
 
