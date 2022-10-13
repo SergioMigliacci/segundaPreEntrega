@@ -34,3 +34,7 @@ h1{
     height: 300px;
     object-fit: cover;
 }
+
+.galeria a:hover{
+    transform: rotate(10deg) scale(1.3);
+}
